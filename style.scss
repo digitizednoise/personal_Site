@@ -1,0 +1,101 @@
+@font-face {
+    font-family: abnes;
+    src: url("/fonts/abnes/abnes.otf") format("opentype");
+}
+
+$black: #000;
+$white: #fff;
+$bordersize: 1px solid #FFFFFF;
+$main-fonts: abnes;
+
+
+*{ 
+    color: white;
+    font-size: 4vh;
+    font-family: $main-fonts;
+    text-decoration:none;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 100%;
+  }
+
+.wrapper{
+    display:grid;
+    opacity: 100%;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 125px;
+    position: relative;
+    z-index: 10;
+    text-align:center;
+    
+}
+
+text {
+    display: block;
+    mix-blend-mode: overlay;
+}
+.site1 {
+    width: 550px;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border: $bordersize;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;        
+}
+.site2 {
+    width: 550px;   
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border: $bordersize;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box; 
+}
+.site3 {
+    width: 550px;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border: $bordersize;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box; 
+}
+.site4{
+    width: 550px;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border: $bordersize;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box; 
+}
+.site5 {
+    width: 550px;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border: $bordersize;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box; 
+    margin-top: 2px;
+}
+
+.openwrapper{
+    opacity: 50%;
+    display:grid;
+    justify-content: center;
+    padding-top: 220px;
+    position: relative;
+    z-index: 10;
+
+
+}
