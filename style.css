@@ -2,6 +2,17 @@
   font-family: abnes;
   src: url("/fonts/abnes/abnes.otf") format("opentype");
 }
+@keyframes TransitioningBackground {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
 * {
   color: white;
   font-size: 4vh;
@@ -43,6 +54,38 @@ text {
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  animation: TransitioningBackground 10s ease infinite;
+}
+.site1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  top: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site1:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+.site1:hover::before, .site1:hover::after {
+  transform: translateX(600px) skewX(-15deg);
+  transition: 0.7s;
 }
 
 .site2 {
@@ -53,6 +96,38 @@ text {
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  animation: TransitioningBackground 10s ease infinite;
+}
+.site2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  top: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site2:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+.site2:hover::before, .site2:hover::after {
+  transform: translateX(600px) skewX(-15deg);
+  transition: 0.7s;
 }
 
 .site3 {
@@ -63,6 +138,38 @@ text {
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  animation: TransitioningBackground 10s ease infinite;
+}
+.site3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site3::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  top: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site3:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+.site3:hover::before, .site3:hover::after {
+  transform: translateX(600px) skewX(-15deg);
+  transition: 0.7s;
 }
 
 .site4 {
@@ -73,6 +180,38 @@ text {
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  animation: TransitioningBackground 10s ease infinite;
+}
+.site4::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site4::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  top: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site4:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+.site4:hover::before, .site4:hover::after {
+  transform: translateX(600px) skewX(-15deg);
+  transition: 0.7s;
 }
 
 .site5 {
@@ -84,13 +223,45 @@ text {
   border-radius: 0.12em;
   box-sizing: border-box;
   margin-top: 2px;
+  position: relative;
+  overflow: hidden;
+  background-size: 400% 400%;
+  animation: TransitioningBackground 10s ease infinite;
+}
+.site5::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  filter: blur(30px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site5::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  height: 100%;
+  top: 0;
+  filter: blur(5px);
+  transform: translateX(-100px) skewX(-15deg);
+}
+.site5:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+.site5:hover::before, .site5:hover::after {
+  transform: translateX(600px) skewX(-15deg);
+  transition: 0.7s;
 }
 
 .openwrapper {
   opacity: 50%;
   display: grid;
   justify-content: center;
-  padding-top: 220px;
+  padding-top: 120px;
   position: relative;
   z-index: 10;
 }

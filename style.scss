@@ -1,12 +1,63 @@
 @font-face {
-    font-family: abnes;
-    src: url("/fonts/abnes/abnes.otf") format("opentype");
+    font-family: adrip1;
+    src: url("/fonts/abnes/adrip1.ttf") format("truetype");
+}
+
+@keyframes TransitioningBackground {
+    0% {
+      background-position: 1% 0%;
+    }
+    50% {
+      background-position: 99% 100%;
+    }
+    100% {
+      background-position: 1% 0%;
+    }
+}
+
+@mixin textanimation {
+    // ANIMATIONSTART
+    position: relative;
+    overflow: hidden;
+    background-size: 400% 400%;
+     animation: TransitioningBackground 10s ease infinite;
+      &::before {
+       content: '';
+       display: block;
+       position: absolute;
+       background: rgba(255, 255, 255, 0.5);
+       top: 0;
+       filter: blur(30px);
+       transform: translateX(-100px) skewX(-15deg);
+     }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.2);
+        width: 30px;
+        height: 100%;
+        top: 0;
+        filter: blur(5px);
+        transform: translateX(-100px) skewX(-15deg);
+      }
+
+      &:hover {
+        cursor: pointer;
+        opacity: 100%;
+        &::before,
+        &::after {
+          transform: translateX(600px) skewX(-15deg);
+          transition: 0.7s;
+        }
+    }
+// ENDANIMATION
 }
 
 $black: #000;
 $white: #fff;
 $bordersize: 1px solid #FFFFFF;
-$main-fonts: abnes;
+$main-fonts: adrip1;
 
 
 *{ 
@@ -42,6 +93,7 @@ text {
     display: block;
     mix-blend-mode: overlay;
 }
+
 .site1 {
     width: 550px;
     display:inline-block;
@@ -49,7 +101,8 @@ text {
     border: $bordersize;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
-    box-sizing: border-box;        
+    box-sizing: border-box;
+    @include textanimation;
 }
 .site2 {
     width: 550px;   
@@ -58,7 +111,8 @@ text {
     border: $bordersize;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    @include textanimation;
 }
 .site3 {
     width: 550px;
@@ -67,7 +121,8 @@ text {
     border: $bordersize;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    @include textanimation;
 }
 .site4{
     width: 550px;
@@ -76,7 +131,8 @@ text {
     border: $bordersize;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    @include textanimation;
 }
 .site5 {
     width: 550px;
@@ -87,13 +143,14 @@ text {
     border-radius:0.12em;
     box-sizing: border-box; 
     margin-top: 2px;
+    @include textanimation;
 }
 
 .openwrapper{
     opacity: 50%;
     display:grid;
     justify-content: center;
-    padding-top: 220px;
+    padding-top: 120px;
     position: relative;
     z-index: 10;
 
