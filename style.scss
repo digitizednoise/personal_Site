@@ -1,6 +1,6 @@
 @font-face {
-    font-family: adrip1;
-    src: url("/fonts/abnes/adrip1.ttf") format("truetype");
+    font-family: Futura;
+    src: url("/fonts/futura sv/Futura Thin.ttf") format("truetype");
 }
 
 @keyframes TransitioningBackground {
@@ -32,14 +32,15 @@
      }
       &::after {
         content: '';
+
         display: block;
         position: absolute;
         background: rgba(255, 255, 255, 0.2);
-        width: 30px;
+        width: 20px;
         height: 100%;
         top: 0;
         filter: blur(5px);
-        transform: translateX(-100px) skewX(-15deg);
+        transform: translateX(-110px) skewX(-15deg);
       }
 
       &:hover {
@@ -57,12 +58,13 @@
 $black: #000;
 $white: #fff;
 $bordersize: 1px solid #FFFFFF;
-$main-fonts: adrip1;
+$main-fonts: Futura;
 
 
 *{ 
+    background-color: black;
     color: white;
-    font-size: 4vh;
+    font-size: 5.5vh;
     font-family: $main-fonts;
     text-decoration:none;
 }
@@ -81,7 +83,7 @@ video {
     display:grid;
     opacity: 100%;
     justify-content: center;
-    gap: 35px;
+    gap: 50px;
     padding-top: 125px;
     position: relative;
     z-index: 10;
@@ -139,7 +141,7 @@ text {
     display:inline-block;
     padding:0.35em 1.2em;
     border: $bordersize;
-    margin:0 0.3em 0.3em 0;
+    margin:0 0.3em 0.3em;
     border-radius:0.12em;
     box-sizing: border-box; 
     margin-top: 2px;
@@ -147,10 +149,10 @@ text {
 }
 
 .openwrapper{
-    opacity: 50%;
+    opacity: 80%;
     display:grid;
     justify-content: center;
-    padding-top: 120px;
+    padding: 1em;
     position: relative;
     z-index: 10;
 
