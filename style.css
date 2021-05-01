@@ -16,7 +16,7 @@
 * {
   background-color: black;
   color: white;
-  font-size: 5vh;
+  font-size: 4.5vh;
   font-family: Futura;
   text-decoration: none;
 }
@@ -26,8 +26,8 @@
   opacity: 100%;
   width: auto;
   justify-content: center;
-  gap: 50px;
-  padding-top: 50px;
+  gap: 5vh;
+  padding-top: 6vh;
   position: relative;
   z-index: 10;
   text-align: center;
@@ -39,11 +39,11 @@ text {
 }
 
 .site1 {
-  width: 550px;
+  width: 35vh;
   display: inline-block;
   text-align: center;
   padding: 0.3em 1em;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   margin: 0.3em 0.3em;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -59,7 +59,7 @@ text {
   background: rgba(255, 255, 255, 0.5);
   top: 0;
   filter: blur(30px);
-  transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site1::after {
   content: "";
@@ -70,23 +70,23 @@ text {
   height: 100%;
   top: 0;
   filter: blur(5px);
-  transform: translateX(-110px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site1:hover {
   cursor: pointer;
   opacity: 100%;
 }
 .site1:hover::before, .site1:hover::after {
-  transform: translateX(600px) skewX(-15deg);
-  transition: 0.7s;
+  transform: translateX(45vh) skewX(-15deg);
+  transition: 0.8s;
 }
 
 .site2 {
-  width: 550px;
+  width: 35vh;
   display: inline-block;
   text-align: center;
   padding: 0.3em 1em;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   margin: 0.3em 0.3em;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -102,7 +102,7 @@ text {
   background: rgba(255, 255, 255, 0.5);
   top: 0;
   filter: blur(30px);
-  transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site2::after {
   content: "";
@@ -113,23 +113,23 @@ text {
   height: 100%;
   top: 0;
   filter: blur(5px);
-  transform: translateX(-110px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site2:hover {
   cursor: pointer;
   opacity: 100%;
 }
 .site2:hover::before, .site2:hover::after {
-  transform: translateX(600px) skewX(-15deg);
-  transition: 0.7s;
+  transform: translateX(45vh) skewX(-15deg);
+  transition: 0.8s;
 }
 
 .site3 {
-  width: 550px;
+  width: 35vh;
   display: inline-block;
   text-align: center;
   padding: 0.3em 1em;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   margin: 0.3em 0.3em;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -145,7 +145,7 @@ text {
   background: rgba(255, 255, 255, 0.5);
   top: 0;
   filter: blur(30px);
-  transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site3::after {
   content: "";
@@ -156,23 +156,23 @@ text {
   height: 100%;
   top: 0;
   filter: blur(5px);
-  transform: translateX(-110px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site3:hover {
   cursor: pointer;
   opacity: 100%;
 }
 .site3:hover::before, .site3:hover::after {
-  transform: translateX(600px) skewX(-15deg);
-  transition: 0.7s;
+  transform: translateX(45vh) skewX(-15deg);
+  transition: 0.8s;
 }
 
 .site4 {
-  width: 550px;
+  width: 35vh;
   display: inline-block;
   text-align: center;
   padding: 0.3em 1em;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   margin: 0.3em 0.3em;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -188,7 +188,7 @@ text {
   background: rgba(255, 255, 255, 0.5);
   top: 0;
   filter: blur(30px);
-  transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site4::after {
   content: "";
@@ -199,23 +199,23 @@ text {
   height: 100%;
   top: 0;
   filter: blur(5px);
-  transform: translateX(-110px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site4:hover {
   cursor: pointer;
   opacity: 100%;
 }
 .site4:hover::before, .site4:hover::after {
-  transform: translateX(600px) skewX(-15deg);
-  transition: 0.7s;
+  transform: translateX(45vh) skewX(-15deg);
+  transition: 0.8s;
 }
 
 .site5 {
-  width: 550px;
+  width: 35vh;
   display: inline-block;
   text-align: center;
   padding: 0.3em 1em;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   margin: 0.3em 0.3em;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -232,7 +232,7 @@ text {
   background: rgba(255, 255, 255, 0.5);
   top: 0;
   filter: blur(30px);
-  transform: translateX(-100px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site5::after {
   content: "";
@@ -243,22 +243,28 @@ text {
   height: 100%;
   top: 0;
   filter: blur(5px);
-  transform: translateX(-110px) skewX(-15deg);
+  transform: translateX(-25vh) skewX(-15deg);
 }
 .site5:hover {
   cursor: pointer;
   opacity: 100%;
 }
 .site5:hover::before, .site5:hover::after {
-  transform: translateX(600px) skewX(-15deg);
-  transition: 0.7s;
+  transform: translateX(45vh) skewX(-15deg);
+  transition: 0.8s;
 }
 
 .openwrapper {
   opacity: 80%;
   display: grid;
-  padding: 1em;
+  padding: 6vh;
+  pointer-events: none;
+  cursor: default;
   justify-content: center;
   position: relative;
   z-index: 10;
+}
+
+.openmedia img {
+  height: 20vh;
 }

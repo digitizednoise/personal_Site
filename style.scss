@@ -28,7 +28,7 @@
        background: rgba(255, 255, 255, 0.5);
        top: 0;
        filter: blur(30px);
-       transform: translateX(-100px) skewX(-15deg);
+       transform: translateX(-25vh) skewX(-15deg);
      }
       &::after {
         content: '';
@@ -40,7 +40,7 @@
         height: 100%;
         top: 0;
         filter: blur(5px);
-        transform: translateX(-110px) skewX(-15deg);
+        transform: translateX(-25vh) skewX(-15deg);
       }
 
       &:hover {
@@ -48,23 +48,23 @@
         opacity: 100%;
         &::before,
         &::after {
-          transform: translateX(600px) skewX(-15deg);
-          transition: 0.7s;
+          transform: translateX(45vh) skewX(-15deg);
+          transition: 0.8s;
         }
     }
-// ENDANIMATION
+// ENDANIMATION sxz 014
 }
 
 $black: #000;
 $white: #fff;
-$bordersize: 1px solid #FFFFFF;
+$bordersize: 2px solid #FFFFFF;
 $main-fonts: Futura;
 
 
 *{ 
     background-color: black;
     color: white;
-    font-size: 5vh;
+    font-size: 4.5vh;
     font-family: $main-fonts;
     text-decoration:none;
 }
@@ -74,8 +74,8 @@ $main-fonts: Futura;
     opacity: 100%;
     width: auto;
     justify-content: center;
-    gap: 50px;
-    padding-top: 50px;
+    gap: 5vh;
+    padding-top: 6vh;
     position: relative;
     z-index: 10;
     text-align:center;
@@ -88,7 +88,7 @@ text {
 }
 
 .site1 {
-    width: 550px;
+    width: 35vh;
     display:inline-block;
     text-align: center;
     padding:0.3em 1em;
@@ -99,7 +99,7 @@ text {
     @include textanimation;
 }
 .site2 {
-    width: 550px;
+    width: 35vh;
     display:inline-block;
     text-align: center;
     padding:0.3em 1em;
@@ -110,7 +110,7 @@ text {
     @include textanimation;
 }
 .site3 {
-    width: 550px;
+    width: 35vh;
     display:inline-block;
     text-align: center;
     padding:0.3em 1em;
@@ -121,7 +121,7 @@ text {
     @include textanimation;
 }
 .site4{
-    width: 550px;
+    width: 35vh;
     display:inline-block;
     text-align: center;
     padding:0.3em 1em;
@@ -132,7 +132,7 @@ text {
     @include textanimation;
 }
 .site5 {
-    width: 550px;
+    width: 35vh;
     display:inline-block;
     text-align: center;
     padding:0.3em 1em;
@@ -147,10 +147,16 @@ text {
 .openwrapper{
     opacity: 80%;
     display:grid;
-    padding: 1em;
+    padding: 6vh;
+    pointer-events: none;
+    cursor: default;
     justify-content: center;
     position: relative;
     z-index: 10;
 
 
+}
+
+.openmedia img{
+    height: 20vh;
 }
