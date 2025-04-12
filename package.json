@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "three": "^0.143.0"
+  },
+  "devDependencies": {
+    "shiki": "^3.2.1"
+  }
+}
